@@ -1,10 +1,16 @@
-const Items = ({ name,img,price }) => {
+import  {link} from 'react-router-dom'
+const Items = ({image, name, price, }) => {
     return(
         <li>
-            {}
-            {price}
-            <img src={img} alt={name}/>
+            <img src={image} alt={name}/>
+            
             {name}
+            
+            {price}
+            
+{/*             <link to={'/detail/${id}'} classNmae='option'>
+            ver detalles
+            </link> */}
         </li>
     )
 }
