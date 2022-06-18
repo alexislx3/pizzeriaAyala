@@ -16,14 +16,14 @@ function App() {
 
   return (
     <div className="App">
-{/* <NavBar /> */}
-{/* <div>
+{/* {<NavBar /> }
+{ <div>
   <button onClick={() => setPage ('list')}>list</button>
   <button onClick={() => setPage ('detail')}>detail</button>
 </div>
  {page === 'list' && <ItemListConteiner greeting= 'Pizzeria Ayala' />}
 {page === 'detail'&& <ItemDetailContainer/>}
- */}
+  */}
  <BrowserRouter>
  <NavBar/>
 
