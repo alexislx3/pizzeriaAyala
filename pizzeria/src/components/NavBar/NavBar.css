@@ -1,9 +1,9 @@
-ul{
+.navbar{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-ul li {
+.listNav {
     text-decoration: none;
     display: inline-block;
     background-color:black;
@@ -17,5 +17,5 @@ ul li a{
     text-decoration: none;
 }
 ul li a:hover{
-background-color: green;
+background-color: rgba(230, 7, 25, 0.2);
 }

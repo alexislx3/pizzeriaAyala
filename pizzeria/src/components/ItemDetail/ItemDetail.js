@@ -3,6 +3,7 @@ const ItemDetail = ({id, name,}) => {
         <>
         <h2> card del detalle</h2>
         {name}
+        {id}
         </>
     )
 }

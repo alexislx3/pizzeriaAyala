@@ -1,13 +1,16 @@
 import './NavBar.css'
+import {Link} from 'react-router-dom'
 const NavBar = ()=>{
     return (
-        <nav>
-            <ul>
-                <link to='category/pizza'>Pizza</link>
-                <link to='category/Hamburguesa'>Hambrugesa</link>
-                <link to='category/Papas fritas'>Papas Fritas</link>
-                <link to='category/bebidas'>Bedida</link>
-                <link>Carrito</link>
+        <nav class = "barraNavegacion">
+            <ul class = "navBar">
+                
+                <li class= "listNav"><Link to='/'>Pizzeria</Link></li>
+                <li class= "listNav"><Link to='/category/pizza'>Pizza</Link></li>
+                <li class= "listNav"><Link to='/category/Hamburguesa'>Hamburgesa</Link></li>
+                <li class= "listNav"><Link to='/category/Papas Fritas'>Papas Fritas</Link></li>
+                <li class= "listNav"><Link to='/category/bebidas'>Bebidas</Link></li>
+                <li class= "listNav"><Link to='/category/'>Carrito</Link></li>
             </ul>
         </nav>
         
