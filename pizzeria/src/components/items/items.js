@@ -1,10 +1,14 @@
 import './items.css'
 import {Link} from 'react-router-dom'
+/* import { Context } from '../../App'
+import { useContext } from 'react' */
 const Items = ({id,name,img,price }) => {
+   
+
     return(
-        <div class= "container">
-        <div class= "card">
-           <article class="cardCaract">
+        <div className= 'container'>
+        <div className= 'card'>
+           <article className='cardCaract'>
             
 
             <img src={img} alt={name}/>

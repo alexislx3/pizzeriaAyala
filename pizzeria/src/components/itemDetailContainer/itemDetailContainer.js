@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
     return(
         <>
         <h1> detalles del producto</h1>
-        <ItemDetail{...product}/>
+        <ItemDetail{...product}  />
         </>
     )
 }
