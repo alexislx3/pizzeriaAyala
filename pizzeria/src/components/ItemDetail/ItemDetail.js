@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import CartContext from '../../Context/CartContext';
 /* import Counter from '../Counter/Counter'; */
-
+import NotificationContext from '../../Notification/Notification';
 
 const Counter = ({onAdd,stock, initial = 0}) =>{
     const [count, setCount] = useState (initial)
@@ -29,17 +29,14 @@ return (
 
 
 
-
-
-
-
 const ItemDetail = ({id, name, stock, img, category, description,price}) => {
     
     const {addItem} = useContext (CartContext)
 
+    const setNotification =useContext (NotificationContext)
 
     const handleOnAdd = (quantity) =>{
-        console.log(`se agregaron ${quantity} ${name}`)
+       setNotification('success', `Se agregaron ${quantity} ${name}`,2)
        addItem ({id,name,price,quantity}) 
     }
 

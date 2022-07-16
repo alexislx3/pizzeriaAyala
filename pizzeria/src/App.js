@@ -4,7 +4,8 @@ import ItemListConteiner from "./components/ItemsListContainer/ItemsListContaine
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 /* import { useState, createContext } from "react"; */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {CartProvider} from './Context/CartContext'
+import {CartProvider} from './Context/CartContext';
+import {NotificationProvider} from './Notification/Notification';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <NotificationProvider>
       <CartProvider>
         <BrowserRouter>
           <NavBar />
@@ -32,6 +34,7 @@ function App() {
           </Routes>
         </BrowserRouter>
         </CartProvider>
+        </NotificationProvider>
       
     </div>
   );
